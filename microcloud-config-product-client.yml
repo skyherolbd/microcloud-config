@@ -16,7 +16,7 @@ spring:
    username: root # 数据库用户名
    password: 123 # 数据库连接密码
  application:
-   name: microcloud-config-product-client1
+   name: microcloud-config-product-client
  profiles: dev
 
 logging:
@@ -28,13 +28,13 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@localhost:7001/eureka
   instance:
-    instance-id: microcloud-config-product-client1
+    instance-id: microcloud-config-product-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microcloud-provider-product1
+  app.name: microcloud-provider-product
   company.name: enjoy
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
@@ -48,7 +48,7 @@ management:
         
 ---
 server:
- port: 8082
+ port: 8081
 mybatis:
  mapper-locations: # 所有的mapper映射文件
  - classpath:mapping/*.xml
@@ -60,7 +60,7 @@ spring:
    username: root # 数据库用户名
    password: 123 # 数据库连接密码
  application:
-   name: microcloud-config-product-client2
+   name: microcloud-config-product-client
  profiles: beta
 
 logging:
@@ -72,13 +72,13 @@ eureka:
     service-url:
       defaultZone: http://admin:enjoy@localhost:7001/eureka
   instance:
-    instance-id: microcloud-config-product-client2
+    instance-id: microcloud-config-product-client
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 2 # 设置心跳的时间间隔（默认是30秒）
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microcloud-config-product2
+  app.name: microcloud-config-product-client
   company.name: enjoy
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$

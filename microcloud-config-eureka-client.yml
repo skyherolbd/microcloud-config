@@ -23,7 +23,7 @@ spring:
       name: admin
       password: enjoy
   application:
-    name: microcloud-config-eureka-client1
+    name: microcloud-config-eureka-client
 ---
 server:
  port: 7002
@@ -45,4 +45,4 @@ spring:
       name: admin
       password: enjoy
   application:
-    name: microcloud-config-eureka-client2
+    name: microcloud-config-eureka-client
