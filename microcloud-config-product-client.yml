@@ -13,7 +13,7 @@ spring:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
    #springboot2.1.2=com.mysql.cj.jdbc.Driver springboot2.0.7=com.mysql.jdbc.Driver
    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
-   url: jdbc:mysql://localhost:3306/spring?serverTimezone=GMT%2B8 # 数据库连接地址
+   url: jdbc:mysql://191.168.1.88:3306/spring?serverTimezone=GMT%2B8 # 数据库连接地址
    username: root # 数据库用户名
    password: 123 # 数据库连接密码
    name: microcloud-config-product-client
@@ -22,7 +22,7 @@ spring:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:enjoy@localhost:7001/eureka
+      defaultZone: http://admin:enjoy@191.168.1.88:7001/eureka
   instance:
     instance-id: microcloud-config-product-client
     prefer-ip-address: true
@@ -53,7 +53,7 @@ spring:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
    #springboot2.1.2=com.mysql.cj.jdbc.Driver springboot2.0.7=com.mysql.jdbc.Driver
    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
-   url: jdbc:mysql://localhost:3306/spring2?serverTimezone=GMT%2B8 # 数据库连接地址
+   url: jdbc:mysql://191.168.1.88:3306/spring2?serverTimezone=GMT%2B8 # 数据库连接地址
    username: root # 数据库用户名
    password: 123 # 数据库连接密码
  application:
@@ -63,7 +63,7 @@ spring:
 eureka:
   client: # 客户端进行Eureka注册的配置
     service-url:
-      defaultZone: http://admin:enjoy@localhost:7001/eureka
+      defaultZone: http://admin:enjoy@191.168.1.88:7001/eureka
   instance:
     instance-id: microcloud-config-product-client
     prefer-ip-address: true
