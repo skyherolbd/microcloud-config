@@ -11,8 +11,7 @@ mybatis:
 spring:
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
-   #springboot2.1.2=com.mysql.cj.jdbc.Driver springboot2.0.7=com.mysql.jdbc.Driver
-   driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
+   driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类-#springboot2.1.2=com.mysql.cj.jdbc.Driver springboot2.0.7=com.mysql.jdbc.Driver
    url: jdbc:mysql://127.0.0.1:3306/spring?serverTimezone=GMT%2B8 # 数据库连接地址
    username: root # 数据库用户名
    password: 123 # 数据库连接密码
@@ -51,8 +50,7 @@ mybatis:
 spring:
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
-   #springboot2.1.2=com.mysql.cj.jdbc.Driver springboot2.0.7=com.mysql.jdbc.Driver
-   driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
+   driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类-#springboot2.1.2=com.mysql.cj.jdbc.Driver springboot2.0.7=com.mysql.jdbc.Driver
    url: jdbc:mysql://127.0.0.1:3306/spring2?serverTimezone=GMT%2B8 # 数据库连接地址
    username: root # 数据库用户名
    password: 123 # 数据库连接密码
