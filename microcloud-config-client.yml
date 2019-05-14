@@ -24,7 +24,7 @@ info:
 
 ---
 server:
-  port: 8102
+  port: 8202
 
 spring:
   profiles: beta
