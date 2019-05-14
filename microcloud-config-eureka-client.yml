@@ -4,7 +4,7 @@ spring:
       - dev
 ---
 server:
-  port: 8301
+ port: 7001
 eureka:
   server:
     eviction-interval-timer-in-ms: 1000   #设置清理的间隔时间，而后这个时间使用的是毫秒单位（默认是60秒）
@@ -23,10 +23,10 @@ spring:
       name: admin
       password: enjoy
   application:
-    name: microcloud-config-eureka-client1
+    name: microcloud-config-eureka-client
 ---
 server:
- port: 8302
+ port: 7002
 eureka:
   server:
     eviction-interval-timer-in-ms: 1000   #设置清理的间隔时间，而后这个时间使用的是毫秒单位（默认是60秒）
@@ -45,4 +45,4 @@ spring:
       name: admin
       password: enjoy
   application:
-    name: microcloud-config-eureka-client2
+    name: microcloud-config-eureka-client
